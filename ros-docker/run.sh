@@ -1,0 +1,1 @@
+docker run -it --name noetic -v $HOME/ROS/noetic/:/home/nix/ --env="DISPLAY=$DISPLAY" --net=host -u 1000:1000 --volume /run/user/1000/gdm/Xauthority:/home/nix/.Xauthority:ro --volume /tmp/.X11-unix/:/tmp/.X11-unix:ro --device /dev/dri  ros-noetic
